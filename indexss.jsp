@@ -1,0 +1,298 @@
+<%
+	if(session.getAttribute("name")==null){
+		response.sendRedirect("loginss.jsp");
+	}
+
+%>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="#" class="logo">Sportyshoes.com</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#product">Men</a>
+                <a href="#women">Women</a>
+                <a href="#kids">Kids</a>
+                <a href="admintask.jsp">Admin Section</a>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+        </header>
+        <!--end header-->
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>Blue & Orange Nike Sport Shoes</span>
+                        <h3>Nike Shoes Model 1</h3>
+                        <p>
+                            Buy these awesome Blue and orange running shoes, available exclusively on sportyshoes.com
+                        </p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/1.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>All Star Shoes</span>
+                        <h3>All Star Canvas Shoes</h3>
+                        <p>
+                            Grab these classic all star shoes now, on special offer @ sportyshoes.com
+                        </p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/2.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            This Nike METCON shoe is perfect shoe for every occasion.
+                        </p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/3.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            A modern classic: Our stylish shoe that has been a bestseller for years is now back in a new version with an updated material mix and a current design language.
+                        </p>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/slide/4.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+            <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+        </section>
+        <!--end home-->
+        <section class="product" id="product">
+            <h1 class="heading">latest <span>Products for Men</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/7.png" alt="">
+                        <h3>Sporty Shoes M1</h3>
+                        <div class="price">₹3150<span>₹5200</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/3.jpg" alt="">
+                        <h3>Sporty Shoes M2</h3>
+                        <div class="price">₹3550 <span>₹5000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/1.jpg" alt="">
+                        <h3>Green Nike Shoes</h3>
+                        <div class="price">₹3150<span>₹4200</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end product-->
+        <!--Start Women-->
+        <section class="product" id="women">
+            <h1 class="heading">latest <span>Products for Women</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/5.png" alt="">
+                        <h3>Sporty Shoes F1</h3>
+                        <div class="price">₹2500<span>₹4000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/2.jpg" alt="">
+                        <h3>Sporty Shoes F2</h3>
+                        <div class="price">₹2050<span>₹3200</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/product4/8.png" alt="">
+                        <h3>Women Shoes F3</h3>
+                        <div class="price">₹3150<span>₹4600</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Women-->
+        <!--Start Kids-->
+        <section class="product" id="kids">
+            <h1 class="heading">latest <span>Products for Kids</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/kids/2.png" alt="">
+                        <h3>Multi Colored Nike Shoes K1</h3>
+                        <div class="price">₹2500<span>₹4000</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/kids/1.png" alt="">
+                        <h3>Sporty Shoes K2</h3>
+                        <div class="price">₹2050<span>₹3200</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="img/kids/3.png" alt="">
+                        <h3>Kids Converse Shoes K3</h3>
+                        <div class="price">₹3150<span>₹4600</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Kids-->
+        <section class="cridet" id="cridet">
+            <div class="box">
+                <h3>all reserved by Sportyshoes.com</h3>
+            </div>
+        </section>
+    </body>
+</html>
+
+<script src="js/script.js"></script>
